@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class ClearCounter : BaseCounter, IKitcchenObjectParent
 {
-
-
-
     public override void Interact(Player player) {
         if(!HasKitchenObject()) {
             // There is no KitchenObject here
@@ -25,7 +22,6 @@ public class ClearCounter : BaseCounter, IKitcchenObjectParent
                     //player is holding plate
                     if (plateKitchenObject.TryAddIngredient(GetKitchenObject().GetKichenObjectSO())) {
                         GetKitchenObject().DestroySelf();
-
                     }
                 } else {
                     //player not carrying plate but smt else
@@ -43,5 +39,8 @@ public class ClearCounter : BaseCounter, IKitcchenObjectParent
             }
         }
     }
-
+    public override void InteractAlternate(Player player)
+    {
+        return;
+    }
 }

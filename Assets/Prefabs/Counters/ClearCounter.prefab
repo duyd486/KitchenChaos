@@ -8,6 +8,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2223180896266748366}
     m_Modifications:
+    - target: {fileID: 3984833892277163771, guid: 0004cb1e11ad014419b943c7da960724,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c5641992377f9044283faea697762064, type: 2}
     - target: {fileID: 4589716710238282922, guid: 0004cb1e11ad014419b943c7da960724,
         type: 3}
       propertyPath: m_Name
@@ -313,7 +318,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf785d80e909964a990354f3c585400, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kitchenObjectSO: {fileID: 11400000, guid: 2b968d8fbf572ca4f99c59a28af1ab33, type: 2}
   counterTopPoint: {fileID: 1294020022200016316}
 --- !u!4 &2223180896266748366 stripped
 Transform:
