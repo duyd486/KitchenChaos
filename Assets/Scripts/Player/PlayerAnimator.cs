@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerAnimator : MonoBehaviour
 {
-    private const string IS_WALKING = "IsWalking";
+    private const string IS_WALKING = "Walk";
+    private const string IS_IDLE = "Idle";
     [SerializeField] private Player player;
 
     private Animator animator;
@@ -12,6 +13,9 @@ public class PlayerAnimator : MonoBehaviour
         animator = GetComponent<Animator>();
     }
     private void Update() {
-        animator.SetBool(IS_WALKING, player.IsWalking());
+        if (player.IsWalking())
+            animator.Play(IS_WALKING);
+        else
+            animator.CrossFade(IS_IDLE, 0.1f);
     }
 }

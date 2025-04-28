@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ContainerCounter : BaseCounter, IKitcchenObjectParent
+public class ContainerCounter : BaseCounter
 {
 
     public event EventHandler OnPlayerGrabbObject;
