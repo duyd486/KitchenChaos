@@ -50,7 +50,7 @@
 ### Clone repo
 
 ```bash
-git clone https://github.com/duyd486/Tsunami.git
+git clone https://github.com/duyd486/KitchenChaos.git
 ```
 ### Mở trong Unity
 - Mở Unity Hub → "Open Project" → Chọn thư mục KitchenChaos
